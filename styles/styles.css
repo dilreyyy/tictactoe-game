@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', 'sans-serif';
+    color: rgb(44, 41, 44);
+    background-color: rgb(247, 239, 247);
+}
+
+#main-header{
+    background-color: rgb(140, 0, 255);
+    color: white;
+    text-align: center;
+    padding: 2rem 5%;
+}
+
+h1{
+    margin: 0;
+}
+
+.btn{
+    font-family: inherit;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+.btn-action{
+    border-color: rgb(140, 0, 255);
+    background-color: rgb(140, 0, 255);
+    color: white;
+}
+
+.btn:hover{
+    border-color: rgb(209, 179, 231);
+    background-color: rgb(209, 179, 231);
+    cursor: pointer;
+}
+
+.btn-action:hover{
+    border-color: rgb(79, 10, 190);
+    background-color: rgb(79, 10, 190);
+    cursor: pointer;
+}
