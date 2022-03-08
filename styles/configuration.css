@@ -21,3 +21,38 @@
     margin: 0.5rem;
     padding: 0.3rem;
 }
+
+#game-configuration{
+    width: 90%;
+    max-width: 40rem;
+    text-align: center;
+    margin: 3rem auto;
+    color: rgb(76, 18, 124);
+}
+
+#game-configuration ol{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#game-configuration li{
+    background-color: rgb(243, 227, 255);
+    width: 50%;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+#game-configuration h2{
+    font-size: 0.8rem;
+}
+
+.player-symbol{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(47, 4, 82);
+    margin: 0.5rem
+}
