@@ -1,4 +1,5 @@
-function openPlayerConfig(){
+function openPlayerConfig(event){
+    editedPlayer = +event.target.dataset.playerid;
     backdropElement.style.display = 'block';
     configOverlayElement.style.display = 'block';
 }
@@ -8,6 +9,7 @@ function closePlayerConfig(){
     configOverlayElement.style.display = 'none';
     formElement.firstElementChild.classList.remove('error');
     errorMessage.textContent = "";
+    // inputPlayerName.textContent = "";
 }
 
 function savePlayerConfig(event){
@@ -20,5 +22,8 @@ function savePlayerConfig(event){
         errorMessage.textContent = "Please enter a valid name!";
         return;
     }
-
+    
+    const updatedPlayerName = document.getElementById("player" +editedPlayer);
+    // console.dir(updatedPlayerName);
+    updatedPlayerName.children[1].textContent = playername;
 }
