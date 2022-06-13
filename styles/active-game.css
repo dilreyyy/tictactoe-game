@@ -1,5 +1,6 @@
 #active-game{
     text-align: center;
+    display: none;
 }
 #active-game article{
     max-width: 40rem;
@@ -30,7 +31,7 @@
 
 #game-board{
     display: grid;
-    grid-template-columns: 6rem 6rem 6rem;
+    grid-template-columns: 6rem 6rem 6rem; /*repeat(3,6rem)*/
     grid-template-rows: 6rem 6rem 6rem;
     gap: 0.5rem;
     list-style: none;

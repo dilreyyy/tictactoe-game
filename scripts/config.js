@@ -10,4 +10,7 @@ function closePlayerConfig(){
 
 function savePlayerConfig(event){
     event.preventDefault();
+    const formData = new FormData(event.target);
+    const playername = formData.get('player-name');
+    console.log(playername);
 }
