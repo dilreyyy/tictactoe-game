@@ -9,7 +9,7 @@ function closePlayerConfig(){
     configOverlayElement.style.display = 'none';
     formElement.firstElementChild.classList.remove('error');
     errorMessage.textContent = "";
-    // inputPlayerName.textContent = "";
+    inputPlayerName.value = "";
 }
 
 function savePlayerConfig(event){
@@ -26,4 +26,8 @@ function savePlayerConfig(event){
     const updatedPlayerName = document.getElementById("player" +editedPlayer);
     // console.dir(updatedPlayerName);
     updatedPlayerName.children[1].textContent = playername;
+
+    player[editedPlayer - 1].name = playername;
+
+    closePlayerConfig();
 }

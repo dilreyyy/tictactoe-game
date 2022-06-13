@@ -2,8 +2,19 @@ const backdropElement = document.getElementById('backdrop');
 const configOverlayElement = document.getElementById('config-overlay');
 const formElement = document.querySelector('form');
 const errorMessage = document.getElementById('error-message');
-let editedpPlayer = 0;
-// let inputPlayerName = document.getElementById('player-name');
+const player = [
+    {
+        name: '',
+        symbol: 'X'
+    },
+    {
+        name: '',
+        symbol: 'O'
+    }
+];
+
+let editedPlayer = 0;
+const inputPlayerName = document.getElementById('player-name');
 
 
 const btnEditPlayerOneElement = document.getElementById('btn-edit-playerone');
